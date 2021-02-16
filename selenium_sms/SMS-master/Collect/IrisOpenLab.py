@@ -71,8 +71,8 @@ class IrisOpenLab() :
 		time.sleep(3)
 		#driver.implicitly_wait(3)
 
-		driver.find_element_by_name('loginEmail').send_keys('idaeho@gmail.com')
-		driver.find_element_by_name('password').send_keys('Hello9360@#')
+		driver.find_element_by_name('loginEmail').send_keys('id')
+		driver.find_element_by_name('password').send_keys('passwd')
 		driver.find_element_by_id('btnLogin').click()
 		driver.implicitly_wait(10)
 		#wait = WebDriverWait( driver, 5 )
