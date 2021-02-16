@@ -12,9 +12,15 @@
 
 ### 2. selenium_sms
 
+- 상태체크 모듈 ( 에러, 오류, 상태이상 체크 )
 -  (예시) python SMS.py IrisOpenLab Filter SMSSend SMS.conf TEST_SMS
 -   Collect 하위의 IrisOpenLab.py 로 점검할 항목 정의
 -   Filter 하위의 Fileter.py 로 필터링 작업
 -   Noti 하위의 SMSSend 로 Noti 발생
 -   SMS.conf 의 config 정보를 읽어옴
 -   ./logs/TEST_SMS.log 로 로그 적용
+
+### 3. ETL
+- 이벤트 플로우 ( EMS 작업을 받아와서 Parsing, DB Loading 및 Rabbit MQ 적재 )
+- (예시) sh ef_start_run.sh
+    - SIOEF2 0.0.0.0 30000 /home/tacs/TACS-EF/ETL/conf/SIOEF2/conf/30000_ETL.conf &
