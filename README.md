@@ -13,8 +13,8 @@
 ### 2. selenium_sms
 
 -  (예시) python SMS.py IrisOpenLab Filter SMSSend SMS.conf TEST_SMS
-    -   Collect 하위의 IrisOpenLab.py 로 점검할 항목 정의
-    -   Filter 하위의 Fileter.py 로 필터링 작업
-    -   Noti 하위의 SMSSend 로 Noti 발생
-    -   SMS.conf 의 config 정보를 읽어옴
-    -   ./logs/TEST_SMS.log 로 로그 적용
+-   Collect 하위의 IrisOpenLab.py 로 점검할 항목 정의
+-   Filter 하위의 Fileter.py 로 필터링 작업
+-   Noti 하위의 SMSSend 로 Noti 발생
+-   SMS.conf 의 config 정보를 읽어옴
+-   ./logs/TEST_SMS.log 로 로그 적용
