@@ -2,7 +2,7 @@
 
 # KimJW Git Page
 
-### 1. Migration
+### 1. Migration - python
 
 - DB 데이터를 Migration 하기위한 코드
 - (예시) python IrisMigration_JW.py ./migration.conf 실행시 마이그레이션 실행
@@ -10,7 +10,7 @@
 - (예시) python IrisMigration_JW.py ./migration.conf {Table명}
     - Table 명은 Table 명으로 된 Directory 명과 일치
 
-### 2. selenium_sms
+### 2. selenium_sms - python
 
 - 상태체크 모듈 ( 에러, 오류, 상태이상 체크 )
 -  (예시) python SMS.py IrisOpenLab Filter SMSSend SMS.conf TEST_SMS
@@ -20,7 +20,11 @@
 -   SMS.conf 의 config 정보를 읽어옴
 -   ./logs/TEST_SMS.log 로 로그 적용
 
-### 3. ETL
+### 3. ETL - python
 - 이벤트 플로우 ( EMS 작업을 받아와서 Parsing, DB Loading 및 Rabbit MQ 적재 )
 - (예시) sh ef_start_run.sh
     - SIOEF2 0.0.0.0 30000 /home/tacs/TACS-EF/ETL/conf/SIOEF2/conf/30000_ETL.conf &
+
+### 4. CMS - java
+- Excel 다운로드 모듈
+- DB 데이터를 읽어와서 Excel 추출 로직
